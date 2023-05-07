@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oswald:wght@200;400&display=swap');
+
+
+#banner{
+    background-image: url('../../assets/FBwJWeQXIAItfyH.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container{
+    width: 100%;
+    height:  auto;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer-video{
+    width: 50%;
+}
+
+#sinopse{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    
+}
+
+.description{
+    color: white;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.buton{
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #ffff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.buton:hover{
+    background-color: white;
+    color:black;
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+spam{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+.footer-navegar{
+    display: none;
+}
+
+.footer-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media(max-width:768px){
+    .footer-navegar{
+        display: block;
+        
+    }
+
+   
+
+    nav{
+        display: none;
+    }
+
+    #banner{
+        background-position: 40%;
+        
+    }
+
+    #trailer-container{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer-video{
+        width: 100%;
+    }
+
+    #sinopse{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .description{
+        width:95%;
+    }
+
+    .buton{
+        width: 100%;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,58 @@
+.actor-cards-container{
+    width: 1005;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.cards-contente{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 20px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.banner-1{
+    background-image: url("https://i.pinimg.com/236x/71/a5/94/71a594814888d9ab67023359cc84aeb6.jpg");
+}
+
+.banner-2{
+    background-image: url("https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/02/Zoe-CNN-Batman1.png?w=837&h=484&crop=1");
+}
+
+.banner-3{
+    background-image: url("https://ovicio.com.br/wp-content/uploads/2020/03/20200308-gordon-art.jpg")
+
+}
+
+@media(max-width:768px){
+    .cards-contente{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+       
+    }
+
+}

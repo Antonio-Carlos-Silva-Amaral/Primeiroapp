@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oswald:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    
+}
+
+nav{
+    width:60%;
+
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+li{
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-right: 50px;
+    transition: .5s;
+}
+
+#logo{
+    width: 150px;
+    height: 60px;
+}
+
+li:hover{
+    color: red;
+}
+
+.banner{
+    width: 100%;
+    height: 409px;
+}
+
+
+.descricao-imagem{
+    color: black;
+    font-size: 50px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    position: relative;
+    left: 120px;
+    top: 150px;
+    font-weight: bold;
+    width: 1100px;
+ 
+}
+
+#imagem{
+    background-image: url('../../assets/batman-topzada.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.container-do-card{
+    width: 1225px;
+    background-color: black;
+    height: 600px;
+    
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.a12{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 50px;
+    column-gap: 30px;
+}
+
+.fundos1{
+    height: 250px;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 15px;
+    background-image: url("https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/08bbef3d-4ea0-11ed-aa6e-9587410378a2/the-batman.jpg");
+    background-size: cover;
+}
+.fundos2{
+    height: 250px;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 15px;
+    background-image: url("https://cdn.ome.lt/_97CT6lQu5JJz1m5Aa4y-YxcabA=/1200x630/smart/extras/conteudos/thebat.png");
+    background-size: cover;
+}
+
+.fundos3{
+    height: 250px;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 15px;
+    background-image: url("https://conteudo.imguol.com.br/c/entretenimento/ff/2020/08/22/robert-pattinson-veste-o-uniforme-do-homem-morcego-no-primeiro-trailer-de-the-batman-1598146508681_v2_900x506.jpg");
+    background-size: cover;
+}
+
+.fundos4{
+    height: 250px;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 15px;
+    background-image: url("https://s2.glbimg.com/8_QKmgu-mbLz3sDvwyzT8LWSjWY=/0x0:620x388/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/u/a/GgAfAPTjK0PzVdWI3mbA/2012-07-16-batman.jpg");
+    background-size: cover;
+}
+
+.fundos5{
+    height: 250px;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 15px;
+    background-image: url("https://portalpopline.com.br/wp-content/uploads/2022/02/batman-pre-estreia.jpg");
+    background-size: cover;
+}
+
+.fundos6{
+    height: 250px;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 15px;
+    background-image: url("https://www.cinemaescrito.com/wp-content/uploads/2022/03/the-batman-scaled.jpg");
+    background-size: cover;
+}
+
+.animacao{
+    transition: 0.5s;
+}
+
+.animacao:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.rodape-navegar{
+    display: none;
+}
+
+@media(max-width:768px){
+    nav{
+        display: none;
+    }
+
+    .banner{
+        height: 500px;
+        width: 100%;
+    }
+    
+    .a12{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .container-do-card{
+        width: 400px;
+        height: auto;
+    }
+
+    .fundos1{
+    height: 250px;
+    width: 350px;
+    }
+
+    .fundos2{
+    height: 250px;
+    width: 350px;
+    }
+
+    .fundos3{
+    height: 250px;
+    width: 350px;
+    }
+
+    .fundos4{
+    height: 250px;
+    width: 350px;
+    }
+    .fundos5{
+    height: 250px;
+    width: 350px;
+    }
+    .fundos6{
+    height: 250px;
+    width: 350px;
+    }
+
+    .descricao-imagem{
+        color: black;
+        font-size: 40px;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        position: relative;
+        left: 10px;
+        top: 150px;
+        font-weight: bold;
+        width: 350px;
+        
+    }
+
+    .rodape-navegar{
+        display: block;
+        position: relative;
+        margin-bottom: 120px;
+        margin-left: 45px;
+    }
+}

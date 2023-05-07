@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oswald:wght@200;400&display=swap');
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+
+nav{
+    width: 60%;
+
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
+li{
+    cursor: pointer;
+    font-size: 19px;
+    color: white;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-right: 50px;
+    transition: .5s;
+}
+
+li:hover{
+    color: red;
+}
+
+#logo{
+    width: 150px;
+    height: 80px;
+}
+
+.titulo{
+    width: 100%;
+    height: 200px;
+    color:white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.fundo{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    row-gap: 20px;
+}
+
+.bloquinhos{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    
+}
+
+.paizao{
+    margin-bottom: 100px;
+
+}
+
+.container{
+    border-bottom: 3px solid black;
+    height: 300px;
+    width: 1000px;
+    background-color: white;
+    margin-left: 150px;
+}
+
+p{
+    color:black;
+    width: 800px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+
+.comentario2{
+    width: 950px;
+
+    font-size: 18px;
+    top: 10px;
+}
+
+.comentario3{
+    width: 950px;
+    
+    font-size: 18px;
+    top: 15px;
+}
+
+img{
+    float: left;
+    width: 150px;
+    height: 170px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.meiao{
+    clear: both;
+    position: relative;
+    left: 10px;
+    top: 7px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.animal{
+    display: none;
+}
+
+.rodape-navegar{
+    display: none;
+}
+
+@media(max-width:768px){
+    nav{
+        display: none;
+    }
+
+    #logo{
+        position: relative;
+        right: 20px;
+    }
+
+    .titulo{
+        text-align: left;
+        font-size: 12px;
+        position: relative;
+        left: 10px;
+    }
+
+    .container{
+        margin-left: 10px;
+        border-bottom: 3px solid black;
+        height: 600px;
+        width: 365px;
+        background-color: white;
+    }
+
+    .primeiro{
+        height: 400px;
+    }
+
+    .quarto{
+        height: 400px;
+    }
+
+    p{
+        clear: both;
+        font-size: 20px;
+        width: 335px;
+        height: auto;
+        position: relative;
+        left: 10px;
+    }
+
+    .comentario2{
+        width: 355px;
+    }
+
+    .comentario3{
+        width: 355px;
+    }
+
+    .meiao{
+        display: none;
+    }
+
+    .animal{
+        display: inline-block;
+        width: 200px;
+        position: relative;
+        left: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        top: 70px;
+    }
+
+    img{
+        float: left;
+    }
+
+    .rodape-navegar{
+        display: block;
+        margin-bottom: 100px;
+        margin-left: 10px;
+    }
+
+    
+}
